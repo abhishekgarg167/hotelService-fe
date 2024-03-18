@@ -15,6 +15,7 @@ function TtlHtlCards({ id, name }) {
       name: name,
     };
     var response = await axios.post(url, obj);
+    alert(response.data)
     var url1 = "https://hotelservice-be.onrender.com/ttl/delete-ttlhtl-data?id=" + id;
     var response1 = await axios.post(url1, id);
   }
